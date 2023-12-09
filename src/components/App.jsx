@@ -1,3 +1,10 @@
+import { Profile } from './Profile/Profile';
+import user from '../jsonchik/user.json';
+
 export const App = () => {
-  return <></>;
+  return (
+    <>
+      <Profile user={user} />
+    </>
+  );
 };
