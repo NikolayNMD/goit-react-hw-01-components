@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   margin: 0 auto;
   margin-bottom: 40px;
   background-color: white;
@@ -16,6 +17,7 @@ export const Container = styled.div`
       width: 150px;
       border-radius: 50%;
       margin: 0 auto 20px;
+      background-color: #e8ecf2;
     }
 
     .name {
@@ -46,6 +48,14 @@ export const Container = styled.div`
       padding: 16px 8px;
       background-color: #e8ecf2;
       border: 1px solid #dedede;
+    }
+
+    li:first-child {
+      border-radius: 0 0 0 5px;
+    }
+
+    li:last-child {
+      border-radius: 0 0 5px 0;
     }
 
     .label {
